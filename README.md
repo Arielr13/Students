@@ -1,2 +1,2 @@
 # Students
-Students - an Android education crowdsourcing platform designed around human connection.
+##*An Android education crowdsourcing platform designed around human connection.*
