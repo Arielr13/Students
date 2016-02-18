@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/loginScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/loginRelativeScroll"
+	    android:background="#fff">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="-10dp"
+		    android:id="@+id/loginTop">
+		    <ImageView 
+		        android:src="@drawable/logo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_weight=".5"/>    
+		</LinearLayout>
+	
+		<!-- Email -->
+	    <EditText
+	        android:id="@+id/loginEmail"
+	        android:layout_below="@id/loginTop"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" 
+	        android:hint="Email"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp">
+	    </EditText>
+		<!-- Passw -->
+	    <EditText
+	        android:inputType="textPassword"
+	        android:id="@+id/loginPassword"
+	        android:layout_below="@id/loginEmail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10"
+	        android:hint="Password"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="15dp" >
+	    </EditText>
+	    <TextView
+	        android:id="@+id/loginError"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/loginPassword"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textColor="#F44336"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginBottom="15dp" />
+	    <Button 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/loginError"
+	       android:text="Log In"
+	       android:textSize="20dp"
+	       android:textColor="#fff"
+	       android:background="@color/purple"
+	       android:layout_marginLeft="25dp"
+	       android:layout_marginRight="25dp"
+	       android:padding="20dp"
+	       android:id="@+id/splashSignUpButton"
+	       android:onClick="logIn"/>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Students</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="school_signup_info">Welcome to Students - the human funding platform!\n\nWe\'re excited to help you start raising money as soon as possible! The goal of students is for schools to post updates about the accomplishments and lives of their students - awards, recognitions, victories. Inside or inside the classroom, on the football field or on the track, at the science fair or at the school play, anything that highlights the accomplishments and lives of students is game. By giving the public a glimpse into the magic that is education, schools bridge a human connection with donors, and raise money.\n\nAfter you signup, please yield 1-2 days for your account to be verified (ensuring Students is completely spam-free). After that, go ahead and start posting updates - and raising funds for your school! </string>
+    <string name="title_activity_sign_up_as_school">SignUpAsSchool</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_school_view">SchoolView</string>
+    <string name="title_activity_add_new">AddNew</string>
+    <string name="title_activity_view_story">ViewStory</string>
+    <string name="title_activity_view_list">ViewList</string>
+    <string name="title_activity_donate">Donate</string>
+    <string name="title_activity_web_view">WebView</string>
+
+</resources>

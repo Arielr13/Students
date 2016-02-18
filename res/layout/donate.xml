@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/signupSchoolScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/donateRelView"
+	    android:background="#fff"
+	    android:focusable="true">
+	    <TextView
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="15dp"
+		    android:layout_marginBottom="15dp"
+		    android:textSize="25dp"
+		    android:textColor="@color/text"
+		    android:gravity="center"
+		    android:id="@+id/donateTitle"
+		    android:text="Donate To Manalapan High School"/>
+		<!-- First Name -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+			android:layout_below="@id/donateTitle"
+			android:id="@+id/donateLinLayout"
+			android:orientation="horizontal">
+			 <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight=".25"
+		        android:layout_height="wrap_content"
+		        />
+			<TextView
+		        android:layout_width="0dp"
+		        android:layout_weight=".1"
+		        android:layout_height="wrap_content"
+		        android:textSize="18dp"
+		        android:text="$"
+		        android:gravity="right"
+		        android:textColor="@color/text"
+		        />
+		    <EditText
+		        android:layout_width="0dp"
+		        android:layout_weight=".4"
+		        android:layout_height="wrap_content"
+		        android:hint=""
+		        android:textSize="18dp"
+		        android:layout_marginLeft="3dp"
+		        android:layout_marginRight="20dp"
+		        android:layout_marginBottom="25dp"
+		        android:background="@android:drawable/editbox_background_normal"
+		        android:ems="10"
+		        android:inputType="numberDecimal"
+		        android:id="@+id/donateAmount"/>		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight=".25"
+		        android:layout_height="wrap_content"
+		        />
+	    </LinearLayout>
+		<EditText
+	        android:id="@+id/donateMemo"
+	        android:layout_below="@id/donateLinLayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:hint="Memo to School (Optional)"
+	        android:lines="10"
+	        android:gravity="top"
+	        android:inputType="textMultiLine"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="15dp" >
+	    </EditText>
+	    
+	    <TextView
+	        android:id="@+id/donateMessage"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/donateMemo"
+	        android:text="Please note: In order to eliminate malicous behaviors, all transactions are handled by PayPal. An account with PayPal is NOT required, the service accepts most major payment methods."
+	        android:textSize="18dp"
+	        android:textColor="@color/text"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="10dp" />
+	    <TextView
+	        android:id="@+id/donateError"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/donateMessage"
+	        android:text=""
+	        android:textSize="18dp"
+	        android:textColor="#F44336"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"/>
+
+	    <Button 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/donateError"
+	       android:text="Donate"
+	       android:textSize="20dp"
+	       android:textColor="#fff"
+	       android:background="@color/green"
+	       android:layout_marginLeft="25dp"
+	       android:layout_marginRight="25dp"
+	       android:layout_marginBottom="20dp"
+	       android:layout_marginTop="5dp" 
+	       android:padding="20dp"
+	       android:id="@+id/donateButton"
+	       android:onClick="donate"/>
+	</RelativeLayout>
+</ScrollView>

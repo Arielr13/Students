@@ -1,0 +1,99 @@
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/signupSchoolScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:focusableInTouchMode="true"
+	    android:background="#fff">
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="Post New Story"
+		    android:textSize="25dp"
+		    android:textColor="@color/text"
+		    android:layout_centerHorizontal="true"
+		    android:id="@+id/addNewTop"
+		    android:layout_marginTop="15dp"/>
+	    <ImageView
+	        android:src="@drawable/frame"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/addNewImage"
+	        android:layout_below="@id/addNewTop"
+	        android:layout_marginTop="15dp"
+	        android:adjustViewBounds="true"
+	        android:onClick="pickImage"/>
+	    <Button 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Choose A Picture"
+	        android:textSize="15dp"
+	        android:textColor="#fff"
+	        android:background="@color/purple"
+	        android:padding="15dp"
+	        android:layout_below="@id/addNewImage"
+	        android:id="@+id/addNewImageButton"
+	        android:onClick="pickImage"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"/>
+	    <EditText
+	        android:id="@+id/addNewTitle"
+	        android:layout_below="@id/addNewImageButton"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:hint="Story Title"
+	        android:gravity="top"
+	        android:inputType="textMultiLine"
+	        android:layout_marginTop="15dp"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" />
+	    <EditText
+	        android:id="@+id/addNewDescription"
+	        android:layout_below="@id/addNewTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:hint="Please Provide A Description About This Update - This Will Be Displayed to Potential Donors"
+	        android:lines="15"
+	        android:gravity="top"
+	        android:inputType="textMultiLine"
+	        android:layout_marginTop="15dp"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" />
+	    <TextView
+	        android:id="@+id/addNewError"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/addNewDescription"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textColor="#F44336"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginTop="15dp" />
+	    <Button 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="Post This Story"
+	        android:textSize="15dp"
+	        android:textColor="#fff"
+	        android:background="@color/purple"
+	        android:padding="15dp"
+	        android:layout_below="@id/addNewError"
+	        android:id="@+id/addNewPostButton"
+	        android:onClick="postNew"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginLeft="15dp"
+	        android:layout_marginRight="15dp"
+	        android:layout_marginBottom="15dp"/>
+	
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/signupScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/signupRelativeScroll"
+	    android:background="#fff">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="-10dp"
+		    android:id="@+id/signupTop">
+		    <ImageView 
+		        android:src="@drawable/logo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_weight=".5"/>    
+		</LinearLayout>
+		<!-- First Name -->
+	    <EditText
+	        android:id="@+id/signupFirstName"
+	        android:layout_below="@id/signupTop"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:hint="First Name"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" >
+	        <requestFocus />
+	    </EditText>
+		<!-- Last Name -->
+	    <EditText
+	        android:id="@+id/signupLastName"
+	        android:layout_below="@id/signupFirstName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" 
+	        android:hint="Last Name"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp">
+	    </EditText>
+		<!-- Email -->
+	    <EditText
+	        android:id="@+id/signupEmail"
+	        android:layout_below="@id/signupLastName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" 
+	        android:hint="Email"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp">
+	    </EditText>
+		<!-- Passw -->
+	    <EditText
+	        android:inputType="textPassword"
+	        android:id="@+id/signupPassword"
+	        android:layout_below="@id/signupEmail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10"
+	        android:hint="Password"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp" >
+	    </EditText>
+		<!-- ConfirmPassw -->
+	    <EditText
+	        android:inputType="textPassword"
+	        android:id="@+id/signupConfirmPassword"
+	        android:layout_below="@id/signupPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10"
+	        android:hint="Confirm Password"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="15dp" >
+	    </EditText>
+
+	    <TextView
+	        android:id="@+id/signupError"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/signupConfirmPassword"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textColor="#F44336"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginBottom="15dp" />
+
+	    <Button 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/signupError"
+	       android:text="Sign Up"
+	       android:textSize="20dp"
+	       android:textColor="#fff"
+	       android:background="@color/purple"
+	       android:layout_marginLeft="25dp"
+	       android:layout_marginRight="25dp"
+	       android:padding="20dp"
+	       android:id="@+id/splashSignUpButton"
+	       android:onClick="signUp"/>
+	</RelativeLayout>
+</ScrollView>

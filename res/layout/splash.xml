@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}"
+    android:background="#fff" >
+	
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Students"
+        android:textColor="@color/text"
+        android:textSize="50dp" 
+        android:paddingBottom="175dp"
+        android:id="@+id/splashText"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/splashText"
+        android:src="@drawable/logo"
+        android:layout_alignLeft="@id/splashText"
+        android:layout_alignRight="@id/splashText"
+        android:layout_marginBottom="-40dp"/>
+    
+   	<Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Your School"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@color/green"
+        android:padding="25dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/splashSignUpAsSchoolButton"
+        android:onClick="signUpAsSchool"/>
+   	<Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@color/purple"
+        android:padding="25dp"
+        android:layout_above="@id/splashSignUpAsSchoolButton"
+        android:id="@+id/splashSignUpButton"
+        android:onClick="signUp"/>
+   	<Button 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log In"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:background="@color/amber"
+        android:padding="25dp"
+        android:layout_above="@id/splashSignUpButton"
+        android:onClick="logIn"/>
+   	
+</RelativeLayout>

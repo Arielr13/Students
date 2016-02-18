@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/signupSchoolScrollView">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:id="@+id/signupSchoolRelativeScroll"
+	    android:background="#fff">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="-10dp"
+		    android:id="@+id/signupSchoolTop">
+		    <ImageView 
+		        android:src="@drawable/logo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_weight=".5"/>    
+		</LinearLayout>
+		<!-- First Name -->
+	    <EditText
+	        android:id="@+id/signupSchoolName"
+	        android:layout_below="@id/signupSchoolTop"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:hint="School Name"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" >
+	        <requestFocus />
+	    </EditText>
+		<!-- Email -->
+	    <EditText
+	        android:id="@+id/signupSchoolEmail"
+	        android:layout_below="@id/signupSchoolName"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10" 
+	        android:hint="Email - Used For Login"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp">
+	    </EditText>
+		<!-- Passw -->
+	    <EditText
+	        android:inputType="textPassword"
+	        android:id="@+id/signupSchoolPassword"
+	        android:layout_below="@id/signupSchoolEmail"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10"
+	        android:hint="Password"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="25dp" >
+	    </EditText>
+		<!-- ConfirmPassw -->
+	    <EditText
+	        android:inputType="textPassword"
+	        android:id="@+id/signupSchoolConfirmPassword"
+	        android:layout_below="@id/signupSchoolPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:ems="10"
+	        android:hint="Confirm Password"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="15dp" >
+	    </EditText>
+		<!-- Bio -->
+		<EditText
+	        android:id="@+id/signupSchoolBio"
+	        android:layout_below="@id/signupSchoolConfirmPassword"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@android:drawable/editbox_background_normal"
+	        android:hint="Please Provide Information About Your School - This Will Be Displayed to Potential Donors"
+	        android:lines="10"
+	        android:gravity="top"
+	        android:inputType="textMultiLine"
+	        android:textSize="18dp"
+	        android:layout_marginLeft="20dp"
+	        android:layout_marginRight="20dp"
+	        android:layout_marginBottom="15dp" >
+	    </EditText>
+	    
+		<LinearLayout
+		    android:orientation="horizontal"
+		    android:id="@+id/signupSchoolLinLayout"
+	        android:layout_below="@id/signupSchoolBio"
+	        android:layout_width="match_parent"
+	        android:layout_height="200dp">
+
+		    <ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:scaleType="fitCenter" 
+		        android:layout_marginLeft="25dp"
+	       		android:layout_marginRight="25dp"
+	       		android:id="@+id/signupSchoolImage"/>
+
+		    <Button
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:text="Pick Display Image" 
+		        android:background="@color/purple"
+		        android:layout_marginLeft="25dp"
+	       		android:layout_marginRight="25dp"
+	       		android:padding="10dp"
+	       		android:textSize="12dp"
+	       		android:textColor="#fff"
+	       		android:layout_gravity="center"
+	       		android:onClick="pickImage"
+		        />
+
+		</LinearLayout>
+	    
+	    <TextView
+	        android:id="@+id/signupSchoolError"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/signupSchoolLinLayout"
+	        android:text=""
+	        android:textSize="15dp"
+	        android:textColor="#F44336"
+	        android:layout_marginLeft="25dp"
+	        android:layout_marginRight="25dp"
+	        android:layout_marginBottom="15dp" />
+
+	    <Button 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/signupSchoolError"
+	       android:text="Sign Up"
+	       android:textSize="20dp"
+	       android:textColor="#fff"
+	       android:background="@color/purple"
+	       android:layout_marginLeft="25dp"
+	       android:layout_marginRight="25dp"
+	       android:layout_marginBottom="20dp"
+	       android:padding="20dp"
+	       android:id="@+id/signupSchoolButton"
+	       android:onClick="signupSchool"/>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,81 @@
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".8">
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:gravity="top"
+		    android:layout_gravity="top">
+		    <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:textSize="25dp"
+			    android:textColor="@color/text"
+			    android:layout_gravity="center|center_vertical"
+			    android:gravity="center|center_vertical"
+			    android:id="@+id/viewStoryTitle"
+			    android:layout_marginTop="15dp"/>
+			<ImageView
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:id="@+id/viewStoryImage"
+		        android:layout_below="@id/addNewTop"
+		        android:layout_marginTop="15dp"
+		        android:adjustViewBounds="true"
+		        android:onClick="pickImage"/>
+		    <TextView
+		        android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:textSize="18dp"
+		    	android:layout_marginLeft="15dp"
+		    	android:layout_marginTop="10dp"
+		    	android:layout_marginBottom="10dp"
+		    	android:layout_marginRight="15dp"
+		    	android:textColor="@color/text"
+		    	android:id="@+id/viewStoryBio"
+		    	android:gravity="top"
+		    	android:layout_gravity="top"/>
+		</LinearLayout>
+	</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/purple"
+        android:text="View School"
+        android:textColor="#fff"
+        android:textSize="18dp"
+        android:layout_weight=".11"
+        android:id="@+id/viewStorySchool"
+        android:onClick="viewSchool" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        android:background="@color/green"
+        android:text="Edit"
+        android:onClick="edit"
+        android:textColor="#fff"
+        android:id="@+id/viewStoryEdit"
+        android:textSize="18dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        android:background="@color/green"
+        android:text="Donate to This School"
+        android:onClick="donate"
+        android:id="@+id/viewStoryDonate"
+        android:textColor="#fff"
+        android:textSize="18dp" />
+
+</LinearLayout>

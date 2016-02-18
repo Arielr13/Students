@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:background="#fff">
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="-10dp"
+		    android:id="@+id/signupSchoolTop">
+		    <ImageView 
+		        android:src="@drawable/logo"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center"
+		        android:layout_weight=".5"/>    
+		</LinearLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/signupSchoolTop"
+		    android:layout_centerHorizontal="true"
+		    android:text="Welcome Aboard!"
+		    android:textColor="@color/text"
+		    android:textSize="25dp"
+		    android:id="@+id/signupSchoolHeader" />
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/signupSchoolHeader"
+		    android:layout_marginTop="20dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:text="@string/school_signup_info"
+		    android:textColor="@color/text"
+		    android:textSize="18dp" 
+		    android:id="@+id/schoolInfo"/>
+		
+		<Button 
+	       android:layout_width="match_parent"
+	       android:layout_height="wrap_content"
+	       android:layout_below="@id/schoolInfo"
+	       android:text="Let's Get Started"
+	       android:textSize="20dp"
+	       android:textColor="#fff"
+	       android:background="@color/purple"
+	       android:layout_marginLeft="25dp"
+	       android:layout_marginRight="25dp"
+	       android:layout_marginTop="20dp"
+	       android:layout_marginBottom="20dp"
+	       android:padding="20dp"
+	       android:id="@+id/school_signup_proceed"
+	       android:onClick="proceed"/>
+
+	</RelativeLayout>
+</ScrollView>
